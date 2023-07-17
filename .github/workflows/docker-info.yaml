@@ -1,0 +1,21 @@
+name: docker info
+
+on:
+  push:
+    branches:
+    - main
+
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  run:
+    name: Run
+    runs-on: ubuntu-22.04
+
+    steps:
+    - name: docker info
+      run: |
+        docker info
