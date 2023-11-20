@@ -17,5 +17,3 @@ jobs:
     - name: docker info
       run: |
         docker info
-
-
