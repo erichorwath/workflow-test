@@ -20,5 +20,4 @@ jobs:
     steps:
     - name: docker info
       run: |
-        docker info
-        
+        docker info        
