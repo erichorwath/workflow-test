@@ -1,4 +1,5 @@
-FROM alpine:3.22.1 # this is working
+# this is working
+FROM alpine:3.22.1 
 
 WORKDIR /
 ENV GNUPGHOME=/tmp
@@ -9,8 +10,8 @@ RUN apk add --no-cache bash \
  && apk --no-cache add ca-certificates gnupg \
  && update-ca-certificates
 
-
-FROM alpine:3.23 # this is not working anymore
+# this is not working anymore
+FROM alpine:3.23 
 
 WORKDIR /
 ENV GNUPGHOME=/tmp
