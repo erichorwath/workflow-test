@@ -2,6 +2,8 @@ name: build-test-alpine-qemu-bug
 
 on:
   workflow_dispatch:
+  push:
+    branches: alpine-qemu-bug
 
 defaults:
   run:
